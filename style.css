@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+/****NAV HEADER*****/
+.nav-center{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    justify-content: space-between;
+    height: 100%;
+    
+    
+}
+.nav-center h4 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: rgb(10, 214, 214);
+    font-weight: 500;
+}
+.nav-links{
+    position: absolute;
+    display: flex;
+    padding-top: 10px;
+    right: 80px;
+}
+.nav-links li{
+    list-style: none;
+    
+}
+.nav-links li a {
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 30px;
+    color: rgb(33, 31, 133);
+    font-weight: 500;
+}
+/******SMALL DEVICE*****/
+@media only screen and (max-width: 800px){
+    .nav-center{
+        
+        display: block;
+        height: 100%;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .nav-center h4 {
+        margin-left: 150px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: rgb(10, 214, 214);
+        font-weight: 500;
+    }
+    .nav-links li a {
+        font-size: 20px;
+        margin-right: 58px;
+    }
+}
+
+/******MAIN HEADER*******/
+main{
+    min-height: 500px;
+    place-items: center;
+    display: grid;
+}
+.container {
+    text-align: center;
+}
+.container h2 {
+    background-color: black;
+    color: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    letter-spacing: .2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.color {
+    color: aqua;
+}
+.btn-hero {
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: .1rem;
+    word-spacing: .2rem;
+    border-style: 5px solid black;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+}
+.btn-hero:hover{
+    color: white;
+    background: black;
+}
+/*****SMALL DEVICE*****/
+@media only screen and (max-width: 800px){
+    .container h2{
+        margin-bottom: 50px;
+    }
+}
